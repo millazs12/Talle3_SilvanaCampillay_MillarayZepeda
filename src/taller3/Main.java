@@ -1,10 +1,19 @@
 package taller3;
-//Millaray Zepeda - 22.063.994-0 - ICCI
-//Silvana Campillay- 21.862.853-2- ICI
 
+// Millaray Zepeda - 22.063.994-0 - ICCI
+// Silvana Campillay - 21.862.853-2 - ICI
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+// Clase principal con lectura de archivos y menus por consola
 public class Main {
-	public static void main(String[] args) {
-		Sistema sistema = new Sistema();
+    public static void main(String[] args) {
+        Sistema sistema = new Sistema();
         System.out.println("Cargando archivos...");
 
         // 1. Cargar Monstruos.txt intentando abrirlo directamente
@@ -415,5 +424,5 @@ public class Main {
         } catch (IOException e) {
             System.out.println("[!] Error al guardar Registros.txt");
         }
-	}
+    }
 }
